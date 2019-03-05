@@ -1,0 +1,13 @@
+<div>
+  <h1>
+    Intergalactic Star Wars Database
+  </h1>
+</div>
+<input placeholder="Search the Star Wars universe..." [(ngModel)]="searchString"/>
+<button type="submit" (click)="onSubmit($event)"></button>
+<div>
+  <p *ngFor="let person of people">
+    {{person.name}}
+  </p>
+</div>
+
